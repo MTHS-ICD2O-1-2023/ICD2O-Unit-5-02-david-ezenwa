@@ -11,10 +11,9 @@ function myButtonClicked() {
   alwaysOnButtonChecked = document.getElementById('option-positive').checked
 
   if (alwaysOnButtonChecked == true) {
-    document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: <6 </p>"
+    document.getElementById("radio-button-value").innerHTML = (x >= 0 && x <= 10)
   } else {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: <-6 </p>"
+      "<p>Value is: -buttonClicked</p>"
   }
 }
