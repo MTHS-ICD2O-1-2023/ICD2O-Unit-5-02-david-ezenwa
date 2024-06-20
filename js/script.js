@@ -13,9 +13,9 @@ function myButtonClicked() {
 
   let value;
   if (positiveButtonChecked) {
-    value = Math.floor(Math.random() * 10) + 1; // Generates a number between 1 and 10
+    value = Math.floor(Math.random() * 6) + 1; // Generates a number between 1 and 6
   } else if (negativeButtonChecked) {
-    value = -(Math.floor(Math.random() * 10) + 1); // Generates a number between -1 and -10
+    value = -(Math.floor(Math.random() * 6) + 1); // Generates a number between -1 and -6
   } else {
     value = "No option selected";
   }
