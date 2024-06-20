@@ -46,3 +46,7 @@ img {
 body {
   background-color: rgb(3, 21, 55);
 }
+
+radio-button-value {
+  justify-content: end;
+}

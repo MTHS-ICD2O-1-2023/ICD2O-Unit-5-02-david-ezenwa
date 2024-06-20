@@ -8,12 +8,17 @@
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  alwaysOnButtonChecked = document.getElementById('option-positive').checked
+  const positiveButtonChecked = document.getElementById('option-positive').checked;
+  const negativeButtonChecked = document.getElementById('option-negative').checked;
 
-  if (alwaysOnButtonChecked == true) {
-    document.getElementById("radio-button-value").innerHTML = (x >= 0 && x <= 10)
+  let value;
+  if (positiveButtonChecked) {
+    value = Math.floor(Math.random() * 10) + 1; // Generates a number between 1 and 10
+  } else if (negativeButtonChecked) {
+    value = -(Math.floor(Math.random() * 10) + 1); // Generates a number between -1 and -10
   } else {
-    document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: -buttonClicked</p>"
+    value = "No option selected";
   }
-}
+
+  document.getElementById("radio-button-value").innerHTML = `Value is: ${value}`;
+  }
